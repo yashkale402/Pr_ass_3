@@ -1,0 +1,42 @@
+<!--Design the HTML form to take the information of a student registering for the course
+such as name, address, gender, date of birth, birthplace (to be selected from a list of
+city/country) telephone number, email, course (to be selected from a list of courses) etc.
+One should provide button to submit as well as Reset the form contents. Save this page
+as “Register.html” and embed the above page “College.html” in this page.
+[HINT: Use inline frame.]-->
+<html>
+    <body>   
+        <form>           
+	<fieldset style="width:30%";>
+	<center><h3> Registration Details</h3></center>
+	<pre style="font-family: Times new roman;">
+        <label>Student Name : </label>	<input type="text">
+        <label>Student Address : </label>	<input type="text" name="address">
+        <label>Gender : </label>	<input type="radio" name="gen">Male	 <input type="radio" name="gen">Female
+        <label>Date-of-birth :		<input type="date">
+        <label>Birth Place : </label>		<select name="countries">
+                <option value="India">India</option>
+                <option value="U.S">United states</option>
+                <option value="China">China</option>
+                <option value"canada">Canada</option>
+                 <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="Japan">Japan</option>
+                <option value="Australia">Australia</option>
+            	</select>
+	<label>Student Email-id : </label>	<input type="email" name="email">
+        <label>Telephone No. : </label>	<input type="text"  name="tno">
+        <label>Course</label>			<select name="course">
+                <option value="BCA">B.C.A. (Science)</option>
+                <option value="BCS">B.Sc. (Computer Science)</option>
+                <option value="BCDS">B.Sc. (Cyber and Digital Science)</option>
+                <option value"BIT">B.Sc.(Information Technology)</option>              
+               </select><br>
+         <input type="submit" value="Submit">	 		<input type="submit"   value="Reset">
+	 </fieldset>
+ 	 <p><a href="q6.html" target="iframe_a">College Information</a></p>
+          <iframe src="q6_College.jpg" name="iframe_a"   height="400" width="400" title="College Info"></iframe>
+	      
+        </form> 
+    </body>
+</html>
